@@ -1,0 +1,11 @@
+virt-install \
+  --name myvm \
+  --ram 13068 \
+  --vcpus 6 \
+  --disk path=myvm.qcow2,format=qcow2 \
+  --cdrom /home/vwency/Downloads/linux.iso \
+  --os-variant ubuntu24.04 \
+  --graphics spice,listen=localhost \
+  --video virtio \
+  --channel spicevmc \
+  --noautoconsole
